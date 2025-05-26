@@ -1,7 +1,26 @@
 h1 {
   text-shadow: 400px;
-  text-decoration-color:#F56F45;
+  text-decoration-color:#2175eb;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #ffebcd;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  text-decoration-line: underline;
+  padding: 2px;
+  border-color: #2175eb;
+}
+h2 {
+  text-decoration-color:#345684;
   text-align: center;
   border-radius: 12px;
   background-color: blanchedalmond;
+}
+
+input{
+  alignment-baseline: central;
+  background-color: #ff825f;
+  border: 3px solid #2175eb;
+  padding: 3px;
+  border-radius: 70px;
 }
