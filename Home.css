@@ -1,18 +1,19 @@
 h1 {
-  text-shadow: 8px 8px 8px #2175eb;
+  text-shadow: 4px 4px 0px #2175eb;
+
   text-decoration-color:#2175eb;
   text-align: center;
   border-radius: 30px;
   background-color: #ffebcd;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1rem;
+  padding-left: 0.625rem;
+  padding-top: 0.35rem;
   border-color: #2175eb;
   font-family: 'cookie', cursive;
-  font-size: 60px;
+  font-size: 4rem;
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: middle;
+  margin-left: 27.5%;
+  margin-right: 27.5%;
 }
 
 input{
