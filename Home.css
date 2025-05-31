@@ -1,38 +1,46 @@
 h1 {
-  text-shadow: 4px 4px 0px #2175eb;
-
+  text-shadow: 0.25rem 0.125rem 0rem #2175eb;
   text-decoration-color:#2175eb;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 2rem;
   background-color: #ffebcd;
-  padding-right: 1rem;
-  padding-left: 0.625rem;
-  padding-top: 0.35rem;
+  padding: 0.35rem 1rem 0.35rem 0.625rem;
   border-color: #2175eb;
   font-family: 'cookie', cursive;
-  font-size: 4rem;
-  display: inline-flex;
-  margin-left: 27.5%;
-  margin-right: 27.5%;
+  font-size: 5rem;
+  display: block;
+  width: fit-content;
+  margin: 0.67rem auto; /* Center horizontally with auto margins */
 }
 
-input{
-  alignment-baseline: central;
+body {background-color: cadetblue;}s
+h1 {color: red;}
+h2 {color: #4f4FF6;}
+p {color: blue;}
+
+input {
+  display: block;
   background-color: #ff825f;
   border: 3px solid #2175eb;
   padding: 3px;
   border-radius: 70px;
-  position: absolute;
-  left: 45%;
-  top: 18.5%;
+  margin: 20px auto; /* Center horizontally with auto margins */
+  position: relative; /* Use relative instead of absolute positioning */
+  left: auto;
+  top: auto;
 }
-p{
-  text-align:center;
-  font-size:35px;
-  color:#2175eb;
-  font-weight:bold;
 
+}
+.para1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #2175eb;
+  font-weight: bold;
+}
 
-
-
+.para2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #2175eb;
+  font-weight: bold;
 }
