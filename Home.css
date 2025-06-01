@@ -1,9 +1,11 @@
 h1 {
-  text-shadow: 0.25rem 0.125rem 0rem #2175eb;
+  color: #1211a1;
+  text-shadow: 0.125rem 0.125rem 0rem #2175eb;
+  box-shadow: 0rem 0rem 3rem #2175eb;
   text-decoration-color:#2175eb;
   text-align: center;
   border-radius: 2rem;
-  background-color: #ffebcd;
+  background-color: #a4ffa7;
   padding: 0.35rem 1rem 0.35rem 0.625rem;
   border-color: #2175eb;
   font-family: 'cookie', cursive;
@@ -13,24 +15,9 @@ h1 {
   margin: 0.67rem auto; /* Center horizontally with auto margins */
 }
 
-body {background-color: cadetblue;}s
-h1 {color: red;}
-h2 {color: #4f4FF6;}
-p {color: blue;}
+body {background-color: rgb(127, 67, 138);}
 
-input {
-  display: block;
-  background-color: #ff825f;
-  border: 3px solid #2175eb;
-  padding: 3px;
-  border-radius: 70px;
-  margin: 20px auto; /* Center horizontally with auto margins */
-  position: relative; /* Use relative instead of absolute positioning */
-  left: auto;
-  top: auto;
-}
 
-}
 .para1 {
   text-align: center;
   font-size: 3rem;
@@ -40,7 +27,29 @@ input {
 
 .para2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #2175eb;
+  font-weight: bold;
+}
+
+.Langs{
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a4ffa7;
+  border-radius: 1.5rem;
+  padding: 0.125rem;
+
+}
+
+footer{
+ color: #cfe3ff; 
+ font-weight: bold;
+
+}
+a{
+  color: #cfe3ff;
+  text-decoration: none;
   font-weight: bold;
 }
