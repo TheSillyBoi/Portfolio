@@ -31,38 +31,38 @@ body {background-color: rgb(127, 67, 138);}
   color: #2175eb;
   font-weight: bold;
 }
-
-.Langs{
-  font-size: 1rem;
-  display: inline-flex;
-  background-color: #a4ffa7;
-  border-radius: 1.5rem;
-    margin-left: 3%;
-  margin-right: 3%;
-  padding: 0.125rem;
-
+.imglist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0.2rem;
 }
-.Lang{
+.imglist > img {
   font-size: 1rem;
-  display: inline-flex;
   background-color: #a4ffa7;
-  border-radius: 1.5rem;
-  margin-left: 29%;
-  margin-right: 3%;
-  padding: 0.125rem;
-
+  border-radius: 16px;
 }
-.Lang1{
+
+.Game1{
   font-size: 1rem;
   display: inline-flex;
   background-color: #a4ffa7;
-  border-radius: 1.5rem;
+  border-radius: 16px;
   margin-left: 3%;
   margin-right: 3%;
   padding: 0.125rem;
-
 }
-
+.Game23{
+  font-size: 1rem;
+  display: inline-flex;
+  background-color: #a4ffa7;
+  border-radius: 16px;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 0.125rem;
+}
 footer{
  color: #cfe3ff; 
  font-weight: bold;
