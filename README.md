@@ -5,6 +5,5 @@ I([@TheSillyBoi](https://github.com/thesillyboi/)/Adrian Tennies) meant to creat
 
 > If you notice that there's issues in the formatting, or other, please help fix it or atleast mention it, this is my first time making a site without Google Sites/Wix/Canva.  
 
-<span style="color:DodgerBlue">*Almost all Icons/Logos were from [Icons8](icons8.com)*</span>. 
 ####  Thanks for checking this out, 
  ##### **Adrian Tennies**
