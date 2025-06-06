@@ -18,7 +18,7 @@ h1 {
 
 body {background-color: rgb(127, 67, 138);
 /* Set a minimum height to ensure the gradient covers the entire viewport */
-  min-height: 100vh;
+  min-height: 6.25rem;
   /* Set the fallback color */
   background-color: rgb(127, 67, 138);
   /* Define the standard gradient that works in modern browsers including Firefox */
