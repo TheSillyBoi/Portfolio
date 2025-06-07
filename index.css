@@ -1,7 +1,7 @@
 h1 {
   color: #1211a1;
   text-shadow: 0.25rem 0.25rem 0rem #2175eb;
-  box-shadow: 0rem 0rem 3rem #2175eb;
+  box-shadow: 0rem 0rem 1rem #2175eb;
   text-decoration-color:#2175eb;
   text-align: center;
   border-radius: 2rem;
@@ -16,19 +16,63 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-body {background-color: rgb(127, 67, 138);
-/* Set a minimum height to ensure the gradient covers the entire viewport */
-  min-height: 6.25rem;
+
+body {
   /* Set the fallback color */
   background-color: rgb(127, 67, 138);
   /* Define the standard gradient that works in modern browsers including Firefox */
   background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 119, 0) 100%);
-  /* For very old Firefox versions (rarely needed nowadays) */
-  background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 119, 0) 100%);
+  /* Ensure gradient covers the entire viewport */
+  min-height: 100vh;
   /* Ensure no margin/padding is cutting off the gradient */
-  margin: 0;
-  padding: 0;}
+  margin: 0.25rem 0.25rem;
+  padding: 0;
+}
 
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  background-color: #a4ffa7;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  border-radius: 3rem;
+  padding-bottom: 0.75rem;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  /* Replace invalid 'float: center' */
+  display: inline-block;
+  color: #202020;
+  background-color: blanchedalmond;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  font-size: 1.75rem;
+  font-family: 'Roboto', sans-serif;
+  margin-top: -0.25rem;
+  margin-bottom: -1rem;
+  border-style: solid;
+  font-weight: 500;
+  border-radius: 3rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: grey;
+  color: white;
+  border-color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+  border-color: black;
+}
 
 .para1 {
   text-align: center;
