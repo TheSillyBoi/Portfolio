@@ -48,7 +48,7 @@ body {
 img{
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 16rem;
     border-radius: 2rem;
     background-color: teal;
     margin: 0.25rem;
