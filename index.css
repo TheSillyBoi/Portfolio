@@ -9,7 +9,7 @@ h1 {
   padding: 0.35rem 1rem 0.35rem 0.625rem;
   border-color: #2175eb;
   font-family: 'cookie', cursive;
-  font-size: 8rem;
+  font-size: 7rem;
   display: block;
   width: fit-content;
   margin: 0.67rem auto; /* Center horizontally with auto margins */
@@ -20,70 +20,64 @@ h1 {
 body {
   /* Set the fallback color */
   background-color: rgb(127, 67, 138);
-  /* Define the standard gradient that works in modern browsers including Firefox */
   background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 119, 0) 100%);
-  /* Ensure gradient covers the entire viewport */
   min-height: 100vh;
-  /* Ensure no margin/padding is cutting off the gradient */
   margin: 0.25rem 0.25rem;
   padding: 0;
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
   overflow: hidden;
-  background-color: #a4ffa7;
+  background-color: lightpink;
   border-style: solid;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   border-radius: 3rem;
   padding-bottom: 0.75rem;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
-  /* Replace invalid 'float: center' */
   display: inline-block;
-  color: #202020;
+  color: #000000;
   background-color: blanchedalmond;
   text-align: center;
   padding: 0.75rem 1rem;
   text-decoration: none;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
   margin-top: -0.25rem;
   margin-bottom: -1rem;
   border-style: solid;
   font-weight: 500;
-  border-radius: 3rem;
-  margin-left: 0.5rem;
+  margin-left: -0.5rem;
   margin-right: 0.5rem;
+  border-left: black;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   background-color: grey;
   color: white;
   border-color: black;
-}
+  border-left: black;
 
-/* Add a color to the active/current link */
+}
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
   border-color: black;
+  border-left: #04AA6D;
 }
 
 .para1 {
   text-align: center;
-  font-size: 6rem;
+  font-size: 5rem;
   color: #2175eb;
   font-weight: bold;
 }
 
 .para2 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #2175eb;
   font-weight: bold;
   margin:0.125rem;
@@ -96,6 +90,7 @@ body {
   gap: 1.5rem;
   margin-bottom: 0.25rem;
   margin-top: 0rem;
+
 }
 .imglist > img {
   font-size: 1rem;
@@ -105,14 +100,14 @@ body {
 }
 
 footer{
- color: #cfffd9; 
- margin-top: 0.25rem;
- font-family: 'Bebas Neue';
- font-size: 2rem;
-font-weight: lighter;
-font-style: italic;
-position:fixed;
-bottom:0;
+  color: #cfffd9; 
+  margin-top: 0.25rem;
+  font-family: 'Bebas Neue';
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-style: italic;
+  position:fixed;
+  bottom:0;
 }
 
 a{
@@ -121,4 +116,5 @@ a{
   font-family: 'Bebas Neue';
   font-weight: lighter;
   font-style: italic;
+  font-size: 1.5rem;
 }
