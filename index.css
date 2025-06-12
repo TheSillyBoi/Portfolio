@@ -1,29 +1,3 @@
-h1 {
-  color: #1211a1;
-  text-shadow: 0.25rem 0.25rem 0rem #2175eb;
-  box-shadow: 0rem 0rem 1rem #2175eb;
-  text-decoration-color:#2175eb;
-  text-align: center;
-  border-radius: 2rem;
-  background-color: #a4ffa7;
-  padding: 0.35rem 1rem 0.35rem 0.625rem;
-  border-color: #2175eb;
-  font-family: 'cookie', cursive;
-  font-size: 7rem;
-  display: block;
-  width: fit-content;
-  margin: 0.67rem auto; /* Center horizontally with auto margins */
-  margin-bottom: 0.5rem;
-}
-
-
-body {
-  background-color: rgb(127, 67, 138);
-  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 119, 0) 100%);
-  min-height: 100vh;
-  margin: 0.25rem 0.25rem;
-  padding: 0;
-}
 
 .topnav {
   overflow: hidden;
@@ -63,12 +37,42 @@ body {
   color: white;
   border-color: black;
 }
+h1 {
+  color: #1211a1;
+  text-shadow: 0.25rem 0.25rem 0rem #2175eb;
+  box-shadow: 0rem 0rem 1rem #2175eb;
+  text-decoration-color:#2175eb;
+  text-align: center;
+  border-radius: 2rem;
+  background-color: #a4ffa7;
+  padding: 0.35rem 1rem 0.35rem 0.625rem;
+  border-color: #2175eb;
+  font-family: 'cookie', cursive;
+  font-size: 7rem;
+  display: block;
+  width: fit-content;
+  margin: 0.67rem auto; /* Center horizontally with auto margins */
+  margin-bottom: 0.5rem;;
+  margin-top: 1.5rem;
+}
+
+
+body {
+  background-color: rgb(127, 67, 138);
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 119, 0) 100%);
+  min-height: 100vh;
+  margin: 0.25rem 0.25rem;
+  padding: 0;
+}
 
 .para1 {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   color: #2175eb;
   font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+
 }
 
 .para2 {

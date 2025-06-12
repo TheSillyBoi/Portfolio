@@ -41,21 +41,31 @@
 body {
     background-color: rgb(255, 175, 175);
     min-height: 100vh;
-
+    text-align: center;
 
 
 }
 img{
-    display: flex;
     justify-content: center;
-    width: 16rem;
+    width: 15rem;
     border-radius: 2rem;
     background-color: teal;
-    margin: 0.25rem;
+    margin-left: 1.2rem;
+
+}
+.Paragraph1{
+    display: inline-block;
+    max-width: 85rem;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: lightcoral;
+    border-radius: 2rem;
+    padding: 1rem 4rem 1rem 4rem;;
+    margin-bottom: 5rem;
+    margin-right: 6rem;
 
 
 }
-
 
 header {
     font-size: 3rem;
@@ -71,8 +81,11 @@ header {
 }
 
 footer {
-    font-size: 1rem;
+  display: flex;;
+    text-align: center;
+    font-size: 0.8rem;;
     position: fixed;
     bottom: 0;
 
 }
+
