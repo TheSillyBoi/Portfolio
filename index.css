@@ -113,7 +113,8 @@ body {
 }
 
 footer{
-  color: #cfffd9; 
+  color: #cfffd9;
+  justify-content: center;
   margin-top: 0.25rem;
   font-family: 'Bebas Neue';
   font-size: 1.5rem;
