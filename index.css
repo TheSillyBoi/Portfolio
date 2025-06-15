@@ -9,7 +9,7 @@
 }
 
 .topnav a {
-  display: inline-block;
+  display: flex;
   color: #000000;
   background-color: blanchedalmond;
   text-align: center;
@@ -23,6 +23,7 @@
   font-weight: 500;
   margin-left: -0.5rem;
   margin-right: 0.25rem;
+  border-color: black;
 }
 
 .topnav a:hover {
@@ -57,11 +58,14 @@ h1 {
   border-color: #2175eb;
   font-family: 'cookie', cursive;
   font-size: 7rem;
-  display: block;
+  display: flex;
   width: fit-content;
-  margin: 0.67rem auto; /* Center horizontally with auto margins */
+  margin: 0.67rem auto;
   margin-bottom: 0.5rem;;
   margin-top: 1.5rem;
+  
+
+
 }
 
 
@@ -71,6 +75,7 @@ body {
   min-height: 100vh;
   margin: 0.25rem 0.25rem;
   padding: 0;
+  overflow-y: hidden;
 }
 
 .para1 {
@@ -114,7 +119,7 @@ footer{
   font-size: 1.5rem;
   font-weight: lighter;
   font-style: italic;
-  position:fixed;
+  position: fixed;
   bottom:0;
 }
 

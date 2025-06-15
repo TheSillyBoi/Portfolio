@@ -9,7 +9,7 @@
 }
 
 .topnav a {
-  display: inline-block;
+  display: flex;
   color: #000000;
   background-color: blanchedalmond;
   text-align: center;
@@ -23,6 +23,8 @@
   font-weight: 500;
   margin-left: -0.5rem;
   margin-right: 0.25rem;
+  border-color: black;
+
 }
 
 .topnav a:hover {

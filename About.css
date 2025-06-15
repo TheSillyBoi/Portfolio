@@ -9,7 +9,7 @@
 }
 
 .topnav a {
-  display: inline-block;
+  display: flex;
   color: #000000;
   background-color: blanchedalmond;
   text-align: center;
@@ -38,6 +38,14 @@
   border-color: black;
 }
 
+html, body {
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none; 
+}
 
 body {
     background-color: rgb(255, 175, 175);
@@ -45,9 +53,8 @@ body {
     min-height: 80vh;
     text-align: center;
     padding: 0;
-
-
 }
+
 img{
     justify-content: center;
     width: 15rem;
@@ -66,7 +73,8 @@ img{
     border-radius: 2rem;
     padding: 1rem 4rem 1rem 4rem;;
     margin-bottom: 2rem;
-    margin-right: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 
 
 }
@@ -80,7 +88,6 @@ img{
     border-radius: 2rem;
     padding: 1rem 4rem 1rem 4rem;
     margin-bottom: 2rem;
-    margin-right: 6rem;
 
 
 }
@@ -96,14 +103,5 @@ header {
     font-size: 1.2rem;
     margin: 0.25rem;
     margin-top: 2rem;
-}
-
-footer {
-  display: flex;;
-    text-align: center;
-    font-size: 0.8rem;;
-    position: fixed;
-    bottom: 0;
-
 }
 
