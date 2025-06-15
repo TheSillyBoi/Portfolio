@@ -23,6 +23,7 @@
   font-weight: 500;
   margin-left: -0.5rem;
   margin-right: 0.25rem;
+  border-color: black;
 }
 
 .topnav a:hover {
@@ -40,8 +41,10 @@
 
 body {
     background-color: rgb(255, 175, 175);
-    min-height: 100vh;
+    margin: 0.25rem 0.25rem;
+    min-height: 80vh;
     text-align: center;
+    padding: 0;
 
 
 }
@@ -51,6 +54,7 @@ img{
     border-radius: 2rem;
     background-color: teal;
     margin-left: 1.2rem;
+    margin-right: 1.2rem;
 
 }
 .Paragraph1{
@@ -61,7 +65,21 @@ img{
     background-color: lightcoral;
     border-radius: 2rem;
     padding: 1rem 4rem 1rem 4rem;;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    margin-right: 6rem;
+
+
+}
+
+.Paragraph2{
+    display: inline-block;
+    max-width: 85rem;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: lightcoral;
+    border-radius: 2rem;
+    padding: 1rem 4rem 1rem 4rem;
+    margin-bottom: 2rem;
     margin-right: 6rem;
 
 

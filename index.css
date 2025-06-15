@@ -1,4 +1,3 @@
-
 .topnav {
   overflow: hidden;
   background-color: #fac4ff;
@@ -36,6 +35,15 @@
   background-color: #04AA6D;
   color: white;
   border-color: black;
+}
+
+
+body {
+    background-color: rgb(255, 175, 175);
+    min-height: 80vh;
+    text-align: center;
+
+
 }
 h1 {
   color: #1211a1;
