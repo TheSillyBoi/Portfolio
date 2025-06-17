@@ -42,24 +42,39 @@
 
 
 body {
-    margin: .25rem .25rem;
+    margin: 0.25rem 0.25rem;
     background-color: rgb(255, 175, 175);
     min-height: 80vh;
-    text-align: left;
-    padding: 0;
+    text-align: center;
+
 
 }
-
-
 header{
-  text-align: center;
-  font-weight: bold;
-  font-size: 5rem;
-
+    font-size: 4rem ;
+    font-weight: 600;
 
 }
+img{
+    display: inline-blockz;
+    border-radius: 2rem;
+    width: 40rem;
+    padding: 1rem;
+}
 
-p{
-  font-size: larger;
-  margin-left: 0.5rem;
+a{
+    text-decoration: none;
+    color: 000
+}
+.Projects{
+    display: inline-block;
+    text-decoration: none;
+    margin: 2rem;
+    padding: 1rem;
+    background-color:lightcoral;
+    border-radius: 2rem;
+    max-width: fit-content;
+    min-width: fit-content;
+
+
+
 }
