@@ -1,8 +1,22 @@
 <div  class="py-25 px-40">
-    <h1 class="text-[6rem] font-bold">Adrian Tennies</h1>
-<br>
-<br>
-<br>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-          <img src="../favicon.svg" width="58" alt = "Minecraft Logo">
+    <h1 class="text-[8rem] font-bold">Adrian Tennies</h1>
+<p class="text-[4rem] font-semibold px-10 py-5">   Young Software developer</p>
+          <!-- <img src="../favicon.svg" width="58" alt = "Minecraft Logo"> -->
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="absolute inset-x-0 bottom-0 h-5 m-2 text-lg font-semibold"> This page is best viewed on Firefox or it's Derivatives
+</footer>
