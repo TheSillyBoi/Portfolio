@@ -13,7 +13,7 @@
      */
 </script>
 
-<h1 class="text-center text-[4rem] font-light">
+<h1 class="text-center text-[4rem] font-semibold text-[#cdd6f4]">
 
     My Projects
 
@@ -30,7 +30,7 @@
 
 {:else if data.projects.length === 0}
 
-    <div class="text-center text-gray-500 text-xl">
+    <div class="text-center text-[#bac2de] text-xl">
 
         No projects found
 
@@ -42,13 +42,13 @@
 
         {#each /** @type {Project[]} */ (data.projects) as project}
 
-            <div class="bg-indigo-400 rounded-[1.5rem] p-6 text-center hover:bg-indigo-500 transition-colors">
+            <div class="bg-[#585b70] rounded-[1.5rem] p-6 text-center hover:bg-[#45475a] transition-colors">
                 
-                <h2 class="text-[2rem] mb-2">
+                <h2 class="text-[2rem] mb-2 text-[#cdd6f4]">
                     {project.name}
                 </h2>
 
-                <p class="text-[1.2rem] mb-4 text-gray-100">
+                <p class="text-[1.2rem] mb-4 font-semibold text-[#a6adc8]">
                     {project.description}
                 </p>
 
@@ -66,7 +66,7 @@
                     href={project.url} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    class="bg-sky-300 hover:bg-blue-400 px-4 py-2 rounded-lg transition-colors inline-block"
+                    class="bg-[#6c7086] hover:bg-[#89b4fa] px-4 py-2 rounded-lg transition-colors inline-block text-[#cdd6f4] font-semibold"
                 >
 
                     View on GitHub

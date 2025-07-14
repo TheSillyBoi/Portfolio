@@ -1,5 +1,5 @@
-<div class="text-gray-700 m-45">
-    <h1 class="text-[4rem]">
+<div class="text-[#a6adc8] m-45">
+    <h1 class="text-[4rem] text-[#cdd6f4]">
         Hello, I'm Adrian
     </h1>
     <br>
