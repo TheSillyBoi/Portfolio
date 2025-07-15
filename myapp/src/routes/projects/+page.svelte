@@ -13,7 +13,7 @@
      */
 </script>
 
-<h1 class="text-center text-[4rem] font-semibold text-[#cdd6f4]">
+<h1 class="text-center text-[3rem] font-semibold text-[#cdd6f4]">
 
     My Projects
 
@@ -38,11 +38,11 @@
 
 {:else}
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15 p-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-3">
 
         {#each /** @type {Project[]} */ (data.projects) as project}
 
-            <div class="bg-[#585b70] rounded-[1.5rem] p-6 text-center hover:bg-[#45475a] transition-colors">
+            <div class="bg-[#585b70] rounded-[.75rem] p-4 text-center hover:bg-[#45475a] transition-colors">
                 
                 <h2 class="text-[2rem] mb-2 text-[#cdd6f4]">
                     {project.name}
@@ -66,7 +66,7 @@
                     href={project.url} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    class="bg-[#6c7086] hover:bg-[#89b4fa] px-4 py-2 rounded-lg transition-colors inline-block text-[#cdd6f4] font-semibold"
+                    class="bg-[#6c7086] hover:bg-[#7f849c] px-4 py-2 rounded-lg transition-colors inline-block text-[#cdd6f4] font-semibold"
                 >
 
                     View on GitHub

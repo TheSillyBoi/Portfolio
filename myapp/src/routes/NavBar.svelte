@@ -1,7 +1,7 @@
 <script></script>
 
-<nav class="bg-[#181825] p-7">
-  <div class="w-full flex items-center justify-between px-0 text-[2rem] text-[#bac2de]">
+<nav class="bg-[#181825] p-4">
+  <div class="w-full flex items-center justify-between px-0 text-[1.75rem] text-[#bac2de]">
     <a href="/" class="text-[#cdd6f4] text-[2rem] font-semibold">My Portfolio</a>
     <div class="space-x-4">
       <a href="/"             class=" py-2 px-3 rounded-md transition delay-15 duration-600 ease-in-out hover:bg-[#11111b]"><b>
