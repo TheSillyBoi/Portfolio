@@ -3,9 +3,29 @@
 	import type { ActionData } from './$types';
 
 	let { form }: { form: ActionData } = $props();
+
+
+
+  import { onMount } from 'svelte';
+  let container: HTMLDivElement;
+
+  function setMinHeight() {
+    const navbar = document.getElementById('global-navbar');
+    if (navbar && container) {
+      const navbarHeight = navbar.offsetHeight;
+      container.style.minHeight = `calc(100vh - ${navbarHeight}px)`;
+    }
+  }
+
+  onMount(() => {
+    setMinHeight();
+    window.addEventListener('resize', setMinHeight);
+    return () => window.removeEventListener('resize', setMinHeight);
+  });
 </script>
-<div class="h-screen  text-center align-middle">
-	<div class='inline-block p-4 bg-[#45475a] rounded-[1.5rem]  text-center '>
+
+<div bind:this={container} class=" flex items-center justify-center ">
+	<div class=' p-6 text-center bg-[#45475a] rounded-[1.5rem] text-semibold  text-[#a6adc8] '>
 		<h1>
 			Login/Register
 		</h1>
