@@ -1,15 +1,16 @@
 {
-    "blogAuthor" : "Adrian Tennies",
-    
+	"blogAuthor": "Adrian Tennies",
 
-    "entries": [
-            {
-                "Title": "My Newfound interest",
-                "Published Date": "2025-7-18",
-                "Content": "g"
-            }
-
-
-    ]
-
+	"entries": [
+		{
+			"Title": "My Newfound interest",
+			"PublishedDate": "2025-7-18",
+			"Content": "I've spent the last couple of days looking into the world of Plan 9 and it's distributions, such as 9 Legacy, and 9Front. I haven't managed to successfully install it in a Virtual Machine as of yet though, but from looking into it, along with the organization behind it, Bell Labs, I've been interested in trying it, and plan to next time I have the free time to, or whenever I feel like trying to modify my VM's data enough that it'll boot."
+		},
+		{
+			"Title": "This is a test",
+			"PublishedDate": "2025-7-18",
+			"Content": "test test yap yap yap"
+		}
+	]
 }

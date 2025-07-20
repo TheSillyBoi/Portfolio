@@ -4,6 +4,7 @@
 	//import { svelte } from '@sveltejs/vite-plugin-svelte';
 	let { children } = $props();
 </script>
+
 <NavBar />
 
 {@render children()}
