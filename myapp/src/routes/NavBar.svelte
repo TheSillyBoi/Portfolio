@@ -34,11 +34,7 @@
 				><b> Blog </b></a
 			>
 
-			<a
-				href="/demo/lucia"
-				class=" rounded-md px-3 py-2 transition delay-15 duration-600 ease-in-out hover:bg-[#313244]"
-				><b> Sign In </b></a
-			>
+			
 		</div>
 	</div>
 </nav>

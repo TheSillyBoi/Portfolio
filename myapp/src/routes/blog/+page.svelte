@@ -1,67 +1,83 @@
 <script lang="ts">
 	import Modal from 'flowbite-svelte/Modal.svelte';
 	import Button from 'flowbite-svelte/Button.svelte';
+	import snarkdown from 'snarkdown';
 	import { onMount } from 'svelte';
 	let modalStates = $state<boolean[]>([]);
 
-	let data = $state<{ entries: { Title: string, Content: string, PublishedDate: string }[] } | null>(null);
+	let data = $state<{
+		entries: { Title: string; Content: string; PublishedDate: string }[];
+	} | null>(null);
+
+
+	let md = '_this_ is **easy** to `use`. #hello';
+	let html = snarkdown(md);
+	console.log(html);
 
 	$effect(() => {
 		if (data) {
 			$inspect(data);
-			
-			
+
 			if (data.entries) {
 				// Initialize modal states for each entry
 				modalStates = Array(data.entries.length).fill(false);
 				for (let i in data.entries) {
-					$inspect(i); 
+					$inspect(i);
 				}
 			} else {
-				console.log("an error has occurred");
+				console.log('an error has occurred');
 			}
 		}
 	});
-	
+
 	onMount(async () => {
 		const response = await fetch('./src/routes/blog/blog.json');
 		data = await response.json();
 		console.log(data);
 	});
+
+
 </script>
+<!-- 
+<div class="content">
+	{#if data?.entries && data.entries.length > 0}
+		{@html snarkdown(data.entries[2].Content)}
+	{/if}
+</div>  -->
+
 
 <div class="items-center justify-center text-center text-[#cdd6f4]">
-	<h1 class="font-bold m-10 text-[2rem]">Welcome to my Blog</h1>
+	<h1 class="m-10 text-[2rem] font-bold">Welcome to my Blog</h1>
 	<div class="grid grid-cols-none items-center justify-center gap-4">
 		{#each data?.entries ?? [] as entry, index}
-			
-		<!-- svelte-ignore event_directive_deprecated -->
-		<button
-			on:click={() => modalStates[index] = true}
-			class="size-fit min-w-[56rem] max-w-[56rem] rounded-lg bg-[#45475a] p-2"
-		>
-			{#if entry?.Title}
-				<h1>{entry.Title}({entry.PublishedDate})</h1>
-			{:else}
-				<p>No title available</p>
-			{/if}
-			<p class="line-clamp-3">
-				{entry.Content}
-			</p>
-			</button>
-		{#if index < modalStates.length}
-			<Modal
-				title={entry.Title}
-				headerClass="text-[#cdd6f4]"
-				form
-				bind:open={modalStates[index]}
-				onaction={({ action }) => alert(`Handle "${action}"`)}
-				class="bg-[#585b70] text-[#bac2de]"
-			><h1>{entry?.Content}</h1>
-				<Button type="submit" color="alternative">Add a comment</Button>
-			</Modal>
-		{/if}
-	{/each}
+			<!-- svelte-ignore event_directive_deprecated -->
+			<button
+				on:click={() => (modalStates[index] = true)}
+				class="size-fit max-w-[56rem] min-w-[56rem] rounded-lg bg-[#45475a] p-2"
+			>
+				{#if entry?.Title}
+					<h1>{entry.Title}({entry.PublishedDate})</h1>
+				{:else}
+					<p>No title available</p>
+				{/if}
+				<div class="line-clamp-3">
+					{@html snarkdown(entry.Content)}
 
+				</div>
+			</button>
+			{#if index < modalStates.length}
+				<Modal
+					title={entry.Title}
+
+					classes={{ header: "text-[#cdd6f4]" }}
+					form
+					bind:open={modalStates[index]}
+					onaction={({ action }) => alert(`Handle "${action}"`)}
+					class="bg-[#585b70] text-[#bac2de]"
+					><h1>{@html snarkdown(entry?.Content)}</h1>
+					<!-- <Button type="submit" color="alternative">Add a comment</Button> -->
+				</Modal>
+			{/if}
+		{/each}
 	</div>
 </div>
