@@ -9,16 +9,12 @@
 		entries: { Title: string; Content: string; PublishedDate: string }[];
 	} | null>(null);
 
-	let md = '_this_ is **easy** to `use`. #hello';
-	let html = snarkdown(md);
-	console.log(html);
 
 	$effect(() => {
 		if (data) {
 			$inspect(data);
 
 			if (data.entries) {
-				// Initialize modal states for each entry
 				modalStates = Array(data.entries.length).fill(false);
 				for (let i in data.entries) {
 					$inspect(i);
@@ -35,13 +31,6 @@
 		console.log(data);
 	});
 </script>
-
-<!-- 
-<div class="content">
-	{#if data?.entries && data.entries.length > 0}
-		{@html snarkdown(data.entries[2].Content)}
-	{/if}
-</div>  -->
 
 <div class="items-center justify-center text-center text-[#cdd6f4]">
 	<h1 class="m-10 text-[2rem] font-bold">Welcome to my Blog</h1>
