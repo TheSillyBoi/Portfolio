@@ -33,8 +33,6 @@
 				class=" rounded-md px-3 py-2 transition delay-15 duration-600 ease-in-out hover:bg-[#313244]"
 				><b> Blog </b></a
 			>
-
-			
 		</div>
 	</div>
 </nav>

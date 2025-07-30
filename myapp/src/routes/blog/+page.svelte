@@ -9,7 +9,6 @@
 		entries: { Title: string; Content: string; PublishedDate: string }[];
 	} | null>(null);
 
-
 	let md = '_this_ is **easy** to `use`. #hello';
 	let html = snarkdown(md);
 	console.log(html);
@@ -35,16 +34,14 @@
 		data = await response.json();
 		console.log(data);
 	});
-
-
 </script>
+
 <!-- 
 <div class="content">
 	{#if data?.entries && data.entries.length > 0}
 		{@html snarkdown(data.entries[2].Content)}
 	{/if}
 </div>  -->
-
 
 <div class="items-center justify-center text-center text-[#cdd6f4]">
 	<h1 class="m-10 text-[2rem] font-bold">Welcome to my Blog</h1>
@@ -62,14 +59,12 @@
 				{/if}
 				<div class="line-clamp-3">
 					{@html snarkdown(entry.Content)}
-
 				</div>
 			</button>
 			{#if index < modalStates.length}
 				<Modal
 					title={entry.Title}
-
-					classes={{ header: "text-[#cdd6f4]" }}
+					classes={{ header: 'text-[#cdd6f4]' }}
 					form
 					bind:open={modalStates[index]}
 					onaction={({ action }) => alert(`Handle "${action}"`)}
