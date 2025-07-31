@@ -28,7 +28,6 @@
 <!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 <!-- PROJECT LOGO -->
-
 <br />
 <div align="center">
   <a href="https://github.com/thesillyboi/Portfolio">
@@ -99,8 +98,7 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This is just my portfolio, [This is the link](https://adriantennies.vercel.app), and here's the build instructions, if you want to run the website yourself for some reason below.
 
 ### Prerequisites
 
@@ -128,10 +126,10 @@ This is an example of how to list things you need to use the software and how to
    pnpm install
    ```
 
-5. Change git remote url to avoid accidental pushes to base project
+5. Build and run the site
 
    ```sh
-   git remote set-url origin thesillyboi/Portfolio
+   pnpm build && pnpm preview
    ```
 
 
@@ -142,7 +140,7 @@ This is an example of how to list things you need to use the software and how to
 
 ## Roadmap
 
-- Adding Signing for commenting
+- Adding Signing in for commenting and/or reactions on blog posts
 
 
 See the [open issues](https://github.com/thesillyboi/Portfolio/issues) for a full list of proposed features (and known issues).
@@ -184,7 +182,7 @@ Distributed under the MIT license. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Adrian Tennies - <!-- [@twitter_handle](https://twitter.com/twitter_handle) --> - adrian@tennies.us
+Adrian Tennies <!-- [@twitter_handle](https://twitter.com/twitter_handle) --> - adrian@tennies.us
 
 Project Link: [https://github.com/thesillyboi/Portfolio](https://github.com/thesillyboi/Portfolio)
 
@@ -195,7 +193,7 @@ Project Link: [https://github.com/thesillyboi/Portfolio](https://github.com/thes
 ## Acknowledgments
 
 * [Flowbite-svelte](https://flowbite-svelte.com/)
-* []()
+* [Tailwind CSS](https://tailwindcss.com/)
 * []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
