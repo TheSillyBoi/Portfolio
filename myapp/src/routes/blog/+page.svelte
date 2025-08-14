@@ -26,7 +26,7 @@
 	});
 
 	onMount(async () => {
-		const response = await fetch('./src/routes/blog/blog.json');
+		const response = await fetch('https://raw.githubusercontent.com/TheSillyBoi/Portfolio/refs/heads/main/myapp/src/routes/blog/blog.json');
 		data = await response.json();
 		console.log(data);
 	});
