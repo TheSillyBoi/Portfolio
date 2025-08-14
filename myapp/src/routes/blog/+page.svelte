@@ -26,7 +26,7 @@
 	});
 
 	onMount(async () => {
-		const response = await fetch('https://raw.githubusercontent.com/TheSillyBoi/Portfolio/refs/heads/main/myapp/src/routes/blog/blog.json');
+		const response = await fetch('./src/routes/blog/blog.json');
 		data = await response.json();
 		console.log(data);
 	});
@@ -54,10 +54,11 @@
 				<Modal
 					title={entry.Title}
 					classes={{ header: 'text-[#cdd6f4]' }}
+					size="lg"
 					form
 					bind:open={modalStates[index]}
 					onaction={({ action }) => alert(`Handle "${action}"`)}
-					class="bg-[#585b70] text-[#bac2de]"
+					class="bg-[#45475a] text-[#bac2de] "
 					><h1>{@html snarkdown(entry?.Content)}</h1>
 					<!-- <Button type="submit" color="alternative">Add a comment</Button> -->
 				</Modal>
