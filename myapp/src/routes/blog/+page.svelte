@@ -26,7 +26,7 @@
 	});
 
 	onMount(async () => {
-		const response = await fetch('https://raw.githubusercontent.com/TheSillyBoi/Portfolio/refs/heads/main/myapp/src/routes/blog/blog.json');
+		const response = await fetch("https://raw.githubusercontent.com/TheSillyBoi/Portfolio/refs/heads/main/myapp/src/routes/blog/blog.json");
 		data = await response.json();
 		console.log(data);
 	});
@@ -34,7 +34,7 @@
 
 <div class="items-center justify-center text-center text-[#cdd6f4]">
 	<h1 class="m-10 text-[2rem] font-bold">Welcome to my Blog</h1>
-	<div class="grid grid-cols-none items-center justify-center gap-4">
+	<div class="grid grid-cols-none items-center text-left justify-center gap-4">
 		{#each data?.entries ?? [] as entry, index}
 			<!-- svelte-ignore event_directive_deprecated -->
 			<button
