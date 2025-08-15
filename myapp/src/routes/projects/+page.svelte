@@ -13,7 +13,7 @@
 	 */
 </script>
 
-<h1 class="text-center text-[3rem] font-semibold text-[#cdd6f4]">My Projects</h1>
+<h1 class="text-center text-[3rem] font-semibold text-[#cdd6f4] mt-7">My Projects</h1>
 
 {#if data.error}
 	<div class="text-center text-xl text-red-500">
@@ -22,7 +22,7 @@
 {:else if data.projects.length === 0}
 	<div class="text-center text-xl text-[#bac2de]">No projects found</div>
 {:else}
-	<div class="grid grid-cols-1 gap-5 p-3 md:grid-cols-2 lg:grid-cols-3">
+	<div class="grid grid-cols-1 gap-7 p-2 md:grid-cols-2 lg:grid-cols-3 m-7">
 		{#each data.projects as project}
 			<div
 				class="rounded-[.75rem] bg-[#585b70] p-4 text-center transition-colors hover:bg-[#45475a]"
