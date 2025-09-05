@@ -115,18 +115,16 @@ This is an example of how to list things you need to use the software and how to
 1. Clone the repo
    ```sh
    git clone https://github.com/thesillyboi/Portfolio.git
-   ```
-3. ```sh
     cd Portfolio/myapp
     ```
 
-4. Install NPM packages
+2. Install NPM packages
 
    ```sh
    pnpm install
    ```
 
-5. Build and run the site
+3. Build and run the site
 
    ```sh
    pnpm build && pnpm preview
@@ -194,7 +192,6 @@ Project Link: [https://github.com/thesillyboi/Portfolio](https://github.com/thes
 
 * [Flowbite-svelte](https://flowbite-svelte.com/)
 * [Tailwind CSS](https://tailwindcss.com/)
-* []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
