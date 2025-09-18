@@ -1,31 +1,10 @@
 <a name="readme-top"></a>
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-<!-- PROJECT SHIELDS -->
-
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT license][license-shield]][license-url]
-
-<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 <!-- PROJECT LOGO -->
 <br />
@@ -80,17 +59,8 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
 
 ### Built With
 
-<!-- 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url] -->
 
-* [![Svelte][Svelte.dev]][Svelte-url]
-
-<!-- * [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url] -->
+[![Svelte][Svelte.dev]][Svelte-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,6 +109,7 @@ This is an example of how to list things you need to use the software and how to
 ## Roadmap
 
 - Adding Signing in for commenting and/or reactions on blog posts
+- trying to add more coloring and a light theme
 
 
 See the [open issues](https://github.com/thesillyboi/Portfolio/issues) for a full list of proposed features (and known issues).
@@ -180,7 +151,7 @@ Distributed under the MIT license. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Adrian Tennies <!-- [@twitter_handle](https://twitter.com/twitter_handle) --> - adrian@tennies.us
+Adrian Tennies - adrian@tennies.us
 
 Project Link: [https://github.com/thesillyboi/Portfolio](https://github.com/thesillyboi/Portfolio)
 
@@ -199,16 +170,15 @@ Project Link: [https://github.com/thesillyboi/Portfolio](https://github.com/thes
 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/thesillyboi/Portfolio.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/thesillyboi/Portfolio.svg?style=for-the-badge&labelColor=313244&color=cba6f7
 [contributors-url]: https://github.com/thesillyboi/Portfolio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/thesillyboi/Portfolio.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/thesillyboi/Portfolio.svg?style=for-the-badge&labelColor=313244&color=cba6f7
 [forks-url]: https://github.com/thesillyboi/Portfolio/network/members
-[stars-shield]: https://img.shields.io/github/stars/thesillyboi/Portfolio.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/thesillyboi/Portfolio.svg?style=for-the-badge&labelColor=313244&color=cba6f7
 [stars-url]: https://github.com/thesillyboi/Portfolio/stargazers
-[issues-shield]: https://img.shields.io/github/issues/thesillyboi/Portfolio.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/thesillyboi/Portfolio.svg?style=for-the-badge&labelColor=313244&color=cba6f7
 [issues-url]: https://github.com/thesillyboi/Portfolio/issues
-[license-shield]: https://img.shields.io/github/license/thesillyboi/Portfolio.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/thesillyboi/Portfolio.svg?style=for-the-badge&labelColor=313244&color=cba6f7
 [license-url]: https://github.com/thesillyboi/Portfolio/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555logo
 [Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
 [Svelte-url]: https://svelte.dev/

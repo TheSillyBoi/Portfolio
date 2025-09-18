@@ -9,7 +9,6 @@
 		entries: { Title: string; Content: string; PublishedDate: string }[];
 	} | null>(null);
 
-
 	$effect(() => {
 		if (data) {
 			$inspect(data);
@@ -26,23 +25,25 @@
 	});
 
 	onMount(async () => {
-		const response = await fetch("https://raw.githubusercontent.com/TheSillyBoi/Portfolio/refs/heads/main/myapp/src/routes/blog/blog.json");
+		const response = await fetch(
+			'https://raw.githubusercontent.com/TheSillyBoi/Portfolio/refs/heads/main/myapp/src/routes/blog/blog.json'
+		);
 		data = await response.json();
 		console.log(data);
 	});
 </script>
 
-<div class="items-center justify-center text-center text-[#cdd6f4]">
+<div class="text-ctp-text items-center justify-center text-center">
 	<h1 class="m-10 text-[2rem] font-bold">Welcome to my Blog</h1>
-	<div class="grid grid-cols-none items-center text-left justify-center gap-4">
+	<div class="grid grid-cols-none items-center justify-center gap-4 text-left">
 		{#each data?.entries ?? [] as entry, index}
 			<!-- svelte-ignore event_directive_deprecated -->
 			<button
 				on:click={() => (modalStates[index] = true)}
-				class="size-fit max-w-[56rem] min-w-[56rem] rounded-lg bg-[#45475a] p-2"
+				class="bg-ctp-surface1 size-fit max-w-[56rem] min-w-[56rem] cursor-pointer rounded-lg p-2"
 			>
 				{#if entry?.Title}
-					<h1>{entry.Title}({entry.PublishedDate})</h1>
+					<h1 class="text-[1.25rem] font-bold">{entry.Title}({entry.PublishedDate})</h1>
 				{:else}
 					<p>No title available</p>
 				{/if}
@@ -53,12 +54,12 @@
 			{#if index < modalStates.length}
 				<Modal
 					title={entry.Title}
-					classes={{ header: 'text-[#cdd6f4]' }}
+					classes={{ header: 'text-ctp-text' }}
 					size="lg"
 					form
 					bind:open={modalStates[index]}
 					onaction={({ action }) => alert(`Handle "${action}"`)}
-					class="bg-[#45475a] text-[#bac2de] "
+					class="bg-ctp-surface1 text-ctp-subtext1 "
 					><h1>{@html snarkdown(entry?.Content)}</h1>
 					<!-- <Button type="submit" color="alternative">Add a comment</Button> -->
 				</Modal>

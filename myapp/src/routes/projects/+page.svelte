@@ -13,31 +13,32 @@
 	 */
 </script>
 
-<h1 class="text-center text-[3rem] font-semibold text-[#cdd6f4] mt-7">My Projects</h1>
+<h1 class="text-ctp-text mt-7 text-center text-[3rem] font-semibold">My Projects</h1>
 
 {#if data.error}
-	<div class="text-center text-xl text-red-500">
+	<div class="text-ctp-red text-center text-xl">
 		{data.error}
 	</div>
 {:else if data.projects.length === 0}
-	<div class="text-center text-xl text-[#bac2de]">No projects found</div>
+	<div class="text-ctp-subtext1 text-center text-xl">No projects found</div>
 {:else}
-	<div class="grid grid-cols-1 gap-7 p-2 md:grid-cols-2 lg:grid-cols-3 m-7">
+	<div class="m-7 grid grid-cols-1 gap-7 p-1 md:grid-cols-2 lg:grid-cols-3">
 		{#each data.projects as project}
 			<div
-				class="rounded-[.75rem] bg-[#585b70] p-4 text-center transition-colors hover:bg-[#45475a]"
+				class="bg-ctp-surface1 hover:bg-ctp-surface2 rounded-[.75rem] p-3 text-center transition-colors"
 			>
-				<h2 class="mb-2 text-[2rem] text-[#cdd6f4]">
+				<h2 class="text-ctp-text mb-2 text-[2rem] font-bold">
 					{project.name}
 				</h2>
 
-				<p class="mb-4 text-[1.2rem] font-semibold text-[#a6adc8]">
+				<p class="text-ctp-subtext0 mb-4 text-[1.2rem] font-semibold">
 					{project.description}
 				</p>
 
 				<div class="mb-4 flex items-center justify-center gap-4">
-					<span class="text-yellow-300">
-						⭐ {project.stars}
+					<span class="text-ctp-yellow">
+						<i class="fa-solid fa-star"></i>
+						{project.stars}
 					</span>
 				</div>
 
@@ -45,7 +46,7 @@
 					href={project.url}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="inline-block rounded-lg bg-[#6c7086] px-4 py-2 font-semibold text-[#cdd6f4] transition-colors hover:bg-[#7f849c]"
+					class="bg-ctp-overlay0 text-ctp-text hover:bg-ctp-overlay1 inline-block rounded-lg px-4 py-2 font-semibold transition-colors"
 				>
 					View on GitHub
 				</a>

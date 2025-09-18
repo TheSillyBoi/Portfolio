@@ -26,13 +26,13 @@
 <form></form>
 <div>
 	<h1
-		class="text-bold m-1 flex w-full flex-nowrap justify-center text-center text-[3rem] text-[#cdd6f4]"
+		class="text-bold text-ctp-text m-1 flex w-full flex-nowrap justify-center text-center text-[3rem]"
 	>
 		If you want to contact me, I'm active on the following platforms:
 	</h1>
 
 	<div bind:this={container} class="flex flex-wrap items-center justify-center text-center">
-		<div class=" rounded-xl bg-[#45475a] px-6 py-3 text-center text-[#89b4fa]">
+		<div class=" bg-ctp-surface1 text-ctp-sky rounded-xl px-6 py-3 text-center">
 			<div class="text-left text-[4rem]">
 				<a href="https://bsky.app/profile/thesillyb0y.bsky.social" target="_blank">
 					<i class="fa-brands fa-bluesky px-4"> </i>
