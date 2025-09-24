@@ -2,7 +2,7 @@
 	<h1 class="text-ctp-text text-[3.5rem] font-bold">Hello, I'm Adrian</h1>
 	<br />
 	<div class="text-[1.5rem]">
-		<p>I'm a Teen from the Wisconsin, who's into programming and Computer Science as a whole</p>
+		<p>I'm a Teen from Wisconsin, who's into programming and Computer Science as a whole</p>
 
 		<br />
 

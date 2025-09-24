@@ -40,7 +40,7 @@
 			<!-- svelte-ignore event_directive_deprecated -->
 			<button
 				on:click={() => (modalStates[index] = true)}
-				class="bg-ctp-surface1 size-fit max-w-[56rem] min-w-[56rem] cursor-pointer rounded-lg p-2"
+				class="bg-ctp-surface1 size-fit max-w-[56rem] min-w-[56rem] cursor-pointer rounded-lg p-2 "
 			>
 				{#if entry?.Title}
 					<h1 class="text-[1.25rem] font-bold">{entry.Title}({entry.PublishedDate})</h1>
@@ -54,12 +54,12 @@
 			{#if index < modalStates.length}
 				<Modal
 					title={entry.Title}
-					classes={{ header: 'text-ctp-text' }}
+					classes={{ header: 'text-ctp-text' } }
 					size="lg"
 					form
 					bind:open={modalStates[index]}
 					onaction={({ action }) => alert(`Handle "${action}"`)}
-					class="bg-ctp-surface1 text-ctp-subtext1 "
+					class="bg-ctp-surface1 text-ctp-subtext1 outline-solid outline-2 outline-offset-2"
 					><h1>{@html snarkdown(entry?.Content)}</h1>
 					<!-- <Button type="submit" color="alternative">Add a comment</Button> -->
 				</Modal>
